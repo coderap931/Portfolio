@@ -5,9 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" ref="text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Adam Patrick's Portfolio</title>
 </head>
 <body>
-    <!-- TEMP -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" id="navbarDiv">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/pcb.png" width="30" height="30">
+            </a>
+            <a class="nav-link" href="#landingWrapper">Home</a>
+            <a class="nav-link" href="#aboutWrapper">About Me</a>
+            <a class="nav-link" href="#projectsWrapper">Projects</a>
+            <a class="nav-link" href="#contactWrapper">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="landingWrapper">
+        <h1 id="name">Adam Patrick</h1>
+        <h2 class="text-muted" id="title">Junior Web Developer</h2>
+    </div>
+
+    <div class="container-fluid" id="aboutWrapper">
+        <h2>About</h2>
+        <img src="./assets/AdamPatrick_2.jpg" width="300">
+        <h4>Overview</h4>
+        <p id="aboutText">Hello, I'm Adam Patrick! I am a Junior Web Developer who recently graduate Eleven Fifty Academy's Web Development program. Prior to Eleven Fifty Academy, I earned my Bachelor of Science in Informatics from Indianapolis University-Purdue University of Indianapolis (IUPUI). For my degree I specialized in Computer Science with a minor in Computer Science. My prior job experience primarily consists of customer service positions, most notably (and recently) I was a Frontline Support Consultant at University Information Technology Services (UITS) at IUPUI.</p>
+        <h4>Technologies Experience</h4>
+        <p id="technologies">HTML5, CSS3, JavaScript, Node.js, Bootstrap, Git, GitHub, Firebase, Python, C, C++, Java, PHP, SQL, and jQuery</p>
+    </div>
+
+    <div class="container-fluid" id="projectsWrapper">
+        <h2>Projects</h2>
+        <div class="card" id="staticLayout" style="width: 18rem">
+            <img src="./assets/staticLayoutThumbnail.png" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Static Layout</h4>
+                <p class="card-text">Recreation of Eleven Fifty Academy's homepage utilizing only HTML and CSS (no JS)</p>
+                <a class="btn btn-primary stretched-link" href="https://coderap931.github.io/staticLayout/" target="blank">Take a Look!</a>
+            </div>
+        </div>
+
+        <div class="card" id="cssCreature" style="width: 18rem">
+            <img src="./assets/cssCreature.png" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">CSS Creature</h4>
+                <p class="card-text">A creature made utilzing only HTML and CSS</p>
+                <a class="btn btn-primary stretched-link" href="https://codepen.io/coderap931/full/GRmbBeW" target="blank">Take a Look!</a>
+            </div>
+        </div>
+
+        <div class="card" id="pokeRandom" style="width: 18rem">
+            <img src="./assets/pokeRandom.png" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">PokéRandom</h4>
+                <p class="card-text">Pull a Pokémon from an API at random and display its sprite and various information about it</p>
+                <a class="btn btn-primary stretched-link" href="https://coderap931.github.io/pokeRandom/" target="blank">Take a Look!</a>
+            </div>
+        </div>
+
+        <div class="card" id="api2" style="width: 18rem">
+            <img src="#" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">API2</h4>
+                <p class="card-text">TBD</p>
+                <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
+            </div>
+        </div>
+
+        <div class="card" id="blueBadge" style="width: 18rem">
+            <img src="./assets/blueBadge.png" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Blue Badge</h4>
+                <p class="card-text">TBD</p>
+                <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
+            </div>
+        </div>
+
+        <div class="card" id="redBadge" style="width: 18rem">
+            <img src="./assets/redBadge.png" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Red Badge</h4>
+                <p class="card-text">TBD</p>
+                <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="contactWrapper">
+        <!-- TEMP (Implement FormSpree) as well as links to GitHub and LinkedIn-->
+    </div>
+
+    <div class="container-fluid" id="footerWrapper">
+        <p class="text-muted">Created by Adam Patrick, 2021</p>
+    </div>
+
+    <!-- DONT TOUCH ME -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
