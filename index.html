@@ -93,7 +93,30 @@
     </div>
 
     <div class="container-fluid" id="contactWrapper">
-        <!-- TEMP (Implement FormSpree) as well as links to GitHub and LinkedIn-->
+        <div class="container-fluid" id="formspreeWrapper">
+            <!-- FormSpree section -->
+            <form action="https://formspree.io/f/xoqybppb" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="_replyto">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="container-fluid" id="contactLinks">
+            <a id="githubLink" href="https://github.com/coderap931" target="blank">
+                <img src="./assets/gitHub.png" width="50" height="50">
+            </a>
+            
+            <a id="linkedinLink" href="https://www.linkedin.com/in/adam-patrick-06a970159/" target="blank">
+                <img src="./assets/linkedIn.png" width="50" height="50">
+            </a>
+        </div>
     </div>
 
     <div class="container-fluid" id="footerWrapper">
