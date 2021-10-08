@@ -9,7 +9,7 @@
     <title>Adam Patrick's Portfolio</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navWrapper">
         <div class="container-fluid" id="navbarDiv">
             <a class="navbar-brand" href="#">
                 <img src="./assets/pcb.png" width="30" height="30">
@@ -21,106 +21,119 @@
         </div>
     </nav>
 
-    <div class="container-fluid" id="landingWrapper">
+    <div class="container-fluid d-flex flex-column" id="landingWrapper">
         <h1 id="name">Adam Patrick</h1>
         <h2 class="text-muted" id="title">Junior Web Developer</h2>
     </div>
 
-    <div class="container-fluid" id="aboutWrapper">
-        <h2>About</h2>
-        <img src="./assets/AdamPatrick_2.jpg" width="300">
-        <h4>Overview</h4>
+    <div class="container-sm d-flex flex-column" id="aboutWrapper">
+        <h2 class="bold newSection">About</h2>
+        <img id="me" src="./assets/AdamPatrick_2.jpg" width="300">
+        <h4 class="bold">Overview</h4>
         <p id="aboutText">Hello, I'm Adam Patrick! I am a Junior Web Developer who recently graduate Eleven Fifty Academy's Web Development program. Prior to Eleven Fifty Academy, I earned my Bachelor of Science in Informatics from Indianapolis University-Purdue University of Indianapolis (IUPUI). For my degree I specialized in Computer Science with a minor in Computer Science. My prior job experience primarily consists of customer service positions, most notably (and recently) I was a Frontline Support Consultant at University Information Technology Services (UITS) at IUPUI.</p>
-        <h4>Technologies Experience</h4>
+        <h4 class="bold">Technologies Experience</h4>
         <p id="technologies">HTML5, CSS3, JavaScript, Node.js, Bootstrap, Git, GitHub, Firebase, Python, C, C++, Java, PHP, SQL, and jQuery</p>
     </div>
 
-    <div class="container-fluid" id="projectsWrapper">
-        <h2>Projects</h2>
-        <div class="card" id="staticLayout" style="width: 18rem">
-            <img src="./assets/staticLayoutThumbnail.png" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">Static Layout</h4>
-                <p class="card-text">Recreation of Eleven Fifty Academy's homepage utilizing only HTML and CSS (no JS)</p>
-                <a class="btn btn-primary stretched-link" href="https://coderap931.github.io/staticLayout/" target="blank">Take a Look!</a>
+    <div class="container d-flex flex-column" id="projectsWrapper">
+        <h2 class="bold newSection">Projects</h2>
+        <div class="row">
+            <div class="card col" id="staticLayout" style="width: 18rem">
+                <img src="./assets/staticLayoutThumbnail.png" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title bold">Static Layout</h4>
+                    <p class="card-text">Recreation of Eleven Fifty Academy's homepage utilizing only HTML and CSS (no JS)</p>
+                    <a class="btn btn-primary stretched-link" href="https://coderap931.github.io/staticLayout/" target="blank">Take a Look!</a>
+                </div>
+            </div>
+
+            <div class="card col" id="cssCreature" style="width: 18rem">
+                <img src="./assets/cssCreature.png" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title bold">CSS Creature</h4>
+                    <p class="card-text">A creature made utilzing only HTML and CSS</p>
+                    <a class="btn btn-primary stretched-link" href="https://codepen.io/coderap931/full/GRmbBeW" target="blank">Take a Look!</a>
+                </div>
+            </div>
+
+            <div class="card col" id="pokeRandom" style="width: 18rem">
+                <img src="./assets/pokeRandom.png" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title bold">PokéRandom</h4>
+                    <p class="card-text">Pull a Pokémon from an API at random and display its sprite and various information about it</p>
+                    <a class="btn btn-primary stretched-link" href="https://coderap931.github.io/pokeRandom/" target="blank">Take a Look!</a>
+                </div>
             </div>
         </div>
 
-        <div class="card" id="cssCreature" style="width: 18rem">
-            <img src="./assets/cssCreature.png" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">CSS Creature</h4>
-                <p class="card-text">A creature made utilzing only HTML and CSS</p>
-                <a class="btn btn-primary stretched-link" href="https://codepen.io/coderap931/full/GRmbBeW" target="blank">Take a Look!</a>
+        <div class="row">
+            <div class="card col" id="giphyAPI" style="width: 18rem">
+                <img src="./assets/api2.png" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title bold">GIPHY API</h4>
+                    <p class="card-text">Using the GIPHY API, pull and display a number (currently 12) of gifs that match the search terms</p>
+                    <a class="btn btn-primary stretched-link" href="https://giphyapi-afc12.web.app/" target="blank">Take a Look!</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card" id="pokeRandom" style="width: 18rem">
-            <img src="./assets/pokeRandom.png" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">PokéRandom</h4>
-                <p class="card-text">Pull a Pokémon from an API at random and display its sprite and various information about it</p>
-                <a class="btn btn-primary stretched-link" href="https://coderap931.github.io/pokeRandom/" target="blank">Take a Look!</a>
+            <div class="card col" id="blueBadge" style="width: 18rem">
+                <img src="./assets/blueBadge.png" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title bold">Blue Badge</h4>
+                    <p class="card-text">TBD</p>
+                    <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card" id="api2" style="width: 18rem">
-            <img src="#" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">API2</h4>
-                <p class="card-text">TBD</p>
-                <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
-            </div>
-        </div>
-
-        <div class="card" id="blueBadge" style="width: 18rem">
-            <img src="./assets/blueBadge.png" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">Blue Badge</h4>
-                <p class="card-text">TBD</p>
-                <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
-            </div>
-        </div>
-
-        <div class="card" id="redBadge" style="width: 18rem">
-            <img src="./assets/redBadge.png" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">Red Badge</h4>
-                <p class="card-text">TBD</p>
-                <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
+            <div class="card col" id="redBadge" style="width: 18rem">
+                <img src="./assets/redBadge.png" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title bold">Red Badge</h4>
+                    <p class="card-text">TBD</p>
+                    <a class="btn btn-primary stretched-link" href="#" target="blank">Take a Look!</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" id="contactWrapper">
-        <div class="container-fluid" id="formspreeWrapper">
+    <div class="container-sm d-flex flex-column" id="resumeDownload">
+        <h2 class="bold">Want to Know More?</h2>
+        <a href="./assets/Adam Patrick's Resume.docx" id="resumeButton" download>Download My Resume</a>
+    </div>
+
+    <div class="container-sm d-flex flex-column" id="contactWrapper">
+        <h2 class="bold newSection">Contact Me</h2>
+        <div class="container-sm d-flex flex-column" id="formspreeWrapper">
             <!-- FormSpree section -->
-            <form action="https://formspree.io/f/xoqybppb" method="POST">
-                <label>
+            <form id="contactForm" action="https://formspree.io/f/xoqybppb" method="POST">
+                <label class="bold">
                     Your email:
-                    <input type="email" name="_replyto">
+                    <input id="yourEmail" type="email" name="_replyto">
                 </label>
-                <label>
+                <label class="bold">
                     Your message:
-                    <textarea name="message"></textarea>
+                    <textarea id="yourMessage" name="message"></textarea>
                 </label>
                 <button type="submit">Send</button>
             </form>
         </div>
 
-        <div class="container-fluid" id="contactLinks">
-            <a id="githubLink" href="https://github.com/coderap931" target="blank">
-                <img src="./assets/gitHub.png" width="50" height="50">
-            </a>
-            
-            <a id="linkedinLink" href="https://www.linkedin.com/in/adam-patrick-06a970159/" target="blank">
-                <img src="./assets/linkedIn.png" width="50" height="50">
-            </a>
+        <div class="container-sm d-flex flex-column" id="contactWrapper">
+            <h2 class="bold newSection">Other Places to Find Me</h2>
+            <div class="container-sm d-flex inline-flex" id="contactLinks">
+                <a id="githubLink" href="https://github.com/coderap931" target="blank">
+                    <img src="./assets/gitHub.png" width="70" height="70">
+                </a>
+                
+                <a id="linkedinLink" href="https://www.linkedin.com/in/adam-patrick-06a970159/" target="blank">
+                    <img src="./assets/linkedIn.png" width="70" height="70">
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid" id="footerWrapper">
-        <p class="text-muted">Created by Adam Patrick, 2021</p>
+    <div class="container-sm d-flex flex-column" id="footerWrapper">
+        <p id="footerText">Created by Adam Patrick, 2021</p>
     </div>
 
     <!-- DONT TOUCH ME -->

@@ -1,1 +1,97 @@
-/* TEMP */
+body {
+    background: linear-gradient(to bottom right, rgb(0, 225, 255), green);
+}
+
+.bold {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px grey;
+}
+
+.newSection {
+    margin-top: 5vh;
+}
+
+.row, .col {
+    margin: 1%;
+}
+
+.card-body {
+    background-color: lightgreen;
+}
+
+a:hover {
+    background-color: cyan;
+}
+
+#resumeDownload {
+    align-items: center;
+    margin-top: 5%;
+}
+
+#resumeButton {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 30%;
+    border: 2px solid black;
+    text-shadow: 2px 2px 5px grey;
+}
+
+#me {
+    border: 3px solid black;
+    border-radius: 10%;
+    margin-bottom: 2%;
+}
+
+#navWrapper {
+    font-family:'Courier New', Courier, monospace;
+}
+
+#landingWrapper, #aboutWrapper, #projectsWrapper, #contactWrapper, #resumeButton, #formspreeWrapper, #footerWrapper {
+    font-family:'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+#landingWrapper {
+    height: 100vh;
+    justify-content: center;
+    text-shadow: 2px 2px 5px grey;
+}
+
+#name, #title {
+    font-size: 3.5rem;
+}
+
+#contactLinks {
+    justify-content: center;
+}
+
+#formspreeWrapper {
+    border: 2px solid black;
+    width: 20vh;
+}
+
+#contactForm {
+    display: contents;
+}
+
+#linkedinLink, #githubLink {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#yourEmail, #yourMessage {
+    margin: 2%;
+}
+
+#footerWrapper {
+    margin-top: 5%;
+}
+
+#footerText {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px grey;
+}
